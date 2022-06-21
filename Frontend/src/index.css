@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply font-body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  @apply font-display;
+}
+
+.container {
+  @apply w-full max-w-7xl m-auto;
+}
+
+.bg-primary-linear {
+  background: linear-gradient(180deg, rgba(97, 183, 220, 0.25) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.button {
+  @apply py-3 px-6 rounded-md transition-all hover:shadow-lg font-bold;
+}
+
+.button--primary {
+  @apply bg-primary hover:bg-primary-dark border border-primary hover:border-primary-dark text-white;
+}
+
+.button--outline {
+  @apply bg-white border border-primary text-primary;
+}
+
+button.heart-button {
+  @apply p-3 border border-secondary bg-white hover:bg-secondary rounded-full transition-all hover:shadow-lg;
+}
+
+button.heart-button svg path {
+  @apply fill-secondary;
+}
+
+button.heart-button:hover svg path {
+  @apply fill-white;
+}
+
+button.heart-button--liked {
+  @apply bg-secondary;
+}
+
+button.heart-button--liked svg path {
+  @apply fill-white;
+}
+
+.input {
+  @apply p-3 mb-2 w-full rounded-md border border-gray-200 outline-primary;
+}
+
+.label {
+  @apply block pb-2;
+}
+
+button.like-button {
+  @apply overflow-hidden mt-4 w-full max-w-sm bg-white border border-secondary rounded-md flex items-stretch transition-all hover:shadow-lg;
+}
+
+button.like-button:hover span.like-button-icon {
+  @apply bg-secondary;
+}
+
+button.like-button:hover span.like-button-icon svg path {
+  @apply fill-white;
+}
+
+span.like-button-icon {
+  @apply px-6 bg-white flex items-center transition-all;
+}
+
+span.like-button-icon svg path {
+  @apply fill-secondary transition-all;
+}
+
+span.like-button-icon--liked {
+  @apply bg-secondary;
+}
+
+span.like-button-icon--liked svg path {
+  @apply fill-white;
+}
+
+.error-message {
+  @apply text-red-500 text-xs pb-2;
+}
+
+.icon-button {
+  @apply px-2 cursor-pointer transition-all flex;
+}
+
+.icon-button span {
+  @apply px-3;
+}
+
+.nav-links-mobile__links {
+  @apply flex flex-col items-start justify-center py-10;
+}
+
+.nav-links-mobile__links .icon-button {
+  @apply pb-4;
+}
+
+.nav-link {
+  @apply font-display font-bold px-2 pb-4 text-xl lg:text-base lg:py-0 transition-all text-gray-700 hover:text-black;
+}
