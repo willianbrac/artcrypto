@@ -9,19 +9,6 @@ Posteriormente quero criar as paginas de atualização e de compras.
 ![175751349-4ecf7d3c-a762-4acd-93df-3047d6b3870f](https://user-images.githubusercontent.com/66275588/178032793-880a5cff-068a-4187-beab-6376cde0d068.png)
 ![175751390-22ffc9aa-761d-485b-a810-5b2fec2d75c6](https://user-images.githubusercontent.com/66275588/178032802-82ec1b17-5751-447d-8ecb-b752b08e0f19.png)
 
-Esta é uma API de criação e publicação de NFTs
-
-* Para utilizar basta rodar o comando:
-<code> docker-compose up -D</code>
-
-* Além disso, é necessário editar o arquivo .env
-
-Fluxo da API: <br>
-  * Criação da conta do Usuário :arrow_heading_down:
-  * Autenticação :arrow_heading_down:
-  * Criação de uma coleção para as NFTs :arrow_heading_down:
-  * Criação da NFT com Upload de imagens e definição de uma coleção
-
 # Rotas:
 ## :white_check_mark: Auth 
  <h3>http://localhost:3000/auth</h3>
